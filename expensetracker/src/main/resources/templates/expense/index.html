@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
 </head>
 <body>
-    <h1>Expense Tracker</h1>
-    <h2>Bem-vindo à nossa aplicação de gerenciamento de despesas</h2>
-    <a>Gerenciar Despesas</a>
+    
+    <h2>Gerenciamento de Despesas</h2>
+
+    <p th:text="${expenses}"></p>
+
 </body>
 </html>
