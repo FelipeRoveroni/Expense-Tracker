@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .expense-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .expense-amount {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
     
     <h2>Gerenciamento de Despesas</h2>
 
-    <p th:text="${expenses}"></p>
+    <ul>
+        <li th:each="expense : ${expenses}" th:text="${expense}"></li>
+    </ul>
 
 </body>
 </html>
