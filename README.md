@@ -1,6 +1,6 @@
 # Expense Tracker
 
-O Expense Tracker é uma aplicação que permite aos usuários controlar e gerenciar suas despesas de forma eficiente. Os usuários podem criar uma conta, fazer login, adicionar despesas, categorizá-las e obter insights sobre seus gastos.
+A Expense Tracker é uma aplicação que permite aos usuários controlar e gerenciar suas despesas de forma eficiente. Os usuários podem criar uma conta, fazer login, adicionar despesas, categorizá-las e obter insights sobre seus gastos.
 
 ## Funcionalidades
 
