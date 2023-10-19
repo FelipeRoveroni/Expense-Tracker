@@ -13,7 +13,7 @@ A Expense Tracker é uma aplicação que permite aos usuários controlar e geren
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação:** - <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" alt="Ícone do HTML" width="28" height="18"> <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CSS.svg" alt="Ícone do CSS" width="28" height="18"> <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Java-Dark.svg" alt="Ícone do Java" width="28" height="18">
-- **Banco de Dados:** Oracle SQL.
+- **Banco de Dados:** 
 - **Framework Web:** 
 - **Autenticação:** 
 - **Gráficos e Visualização de Dados:**
