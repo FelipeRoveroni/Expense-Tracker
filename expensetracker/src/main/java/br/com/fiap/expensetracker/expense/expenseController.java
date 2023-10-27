@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/expense")
-public class ExpenseController {
+public class expenseController {
 
     @Autowired
     ExpenseService service;
