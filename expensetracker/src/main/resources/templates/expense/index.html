@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Expense Tracker</title>
 </head>
 <body class="#eeeeee grey lighten-3">
@@ -15,20 +18,35 @@
             <li><a href="#"class="black-text">Despesas</a></li>
             <li><a href="#"class="black-text">Relatórios</a></li>
             <li><a href="#"class="black-text">Perfil</a></li>
+            <li>
+                <a class='dropdown-trigger' href='#' data-target='dropdown1'>
+                  <img th:src="${avatar_url}" alt="" class="avatar">
+                </a>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><span th:text="${username}"></span></li>
+                  <li class="divider" tabindex="-1"></li>
+                  <li><a href="/logout"><i class="material-icons">logout</i>sair</a></li>
+                </ul>
+            </li>
           </ul>
         </div>
         </nav>
-
         <main class="container">
-
             <ul class="collection with-header center-align">
                 <li class="collection-header"><h4>Gerenciamento de Despesas</h4></li>
                 <li class="collection-item" th:each="expense : ${expenses}" th:text="${expense}"><i class="material-icons">send</i></a></div></li>
               </ul>
-            
             <h2></h2>
-
         </main>
-
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.dropdown-trigger');
+          const options = {
+            constrainWidth: false,
+            coverTrigger: false
+          }
+          var instances = M.Dropdown.init(elems, options);
+        });
+      </script>
 </body>
 </html>
