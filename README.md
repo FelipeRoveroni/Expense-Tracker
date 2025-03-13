@@ -17,6 +17,7 @@ A Expense Tracker é uma aplicação que permite aos usuários controlar e geren
 - **Framework Web:** 
 - **Autenticação:** 
 - **Gráficos e Visualização de Dados:**
+- Punheta
 
 ## Integrantes
 
